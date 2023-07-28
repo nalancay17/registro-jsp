@@ -7,7 +7,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 	private static final String INSERT = "INSERT INTO usuario (nombre, apellido, usuario, contrasena, pais, tecnologia) VALUES (?,?,?,?,?)";
 
 	@Override
-	public void registrarUsuario(Usuario u) throws Exception {
+	public void registrar(Usuario u) throws Exception {
 		Conexion conexion = new Conexion();
 		try {
 			conexion.conectar();
@@ -20,7 +20,7 @@ public class UsuarioDAOImpl implements UsuarioDAO {
 			st.setString(6, u.getTecnologia());
 			st.executeUpdate();
 		} catch (Exception e) {
-
+			throw e;
 		} finally {
 			conexion.desconectar();
 		}
