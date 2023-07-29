@@ -4,7 +4,7 @@ import java.sql.PreparedStatement;
 
 public class UsuarioDAOImpl implements UsuarioDAO {
 
-	private static final String INSERT = "INSERT INTO usuario (nombre, apellido, usuario, contrasena, pais, tecnologia) VALUES (?,?,?,?,?)";
+	private static final String INSERT = "INSERT INTO usuario (nombre, apellido, usuario, contrasena, pais, tecnologia) VALUES (?,?,?,?,?,?)";
 
 	@Override
 	public void registrar(Usuario u) throws Exception {

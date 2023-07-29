@@ -66,4 +66,12 @@ public class Usuario {
 		this.tecnologia = tecnologia;
 	}
 
+	@Override
+	public String toString() {
+		return "Usuario [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", usuario=" + usuario
+				+ ", contrasena=" + contrasena + ", pais=" + pais + ", tecnologia=" + tecnologia + "]";
+	}
+
+	
+
 }
