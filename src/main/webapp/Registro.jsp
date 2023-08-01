@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"
-	import="controlador.UsuarioServlet"%>
+	import="controlador.RegistroUsuarioServlet"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,7 +11,7 @@
 
 	<h1>Registro usuario JSP</h1>
 
-	<form action="UsuarioServlet" method="post" accept-charset="UTF-8">
+	<form action="RegistroUsuarioServlet" method="post" accept-charset="UTF-8">
 
 		<table width="35%" border="0">
 			<tr>
